@@ -1,0 +1,487 @@
+body
+{
+	margin:0;
+	padding:0;
+}
+/* ................................... */
+.navbar{
+}
+.logo{
+	width:50%;
+	float:left;
+	background-color:#00003D; 
+	color:white;
+}
+.menu{
+	width:50%;
+	float:right;
+	background-color:#00003D;  
+} 
+a {
+text-decoration: none;
+}
+.ul-in-menu, .dropdown-ul {
+	background: #00003D;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+.li-in-menu, .dropdown-li {
+	color: #fff;
+	background: #00003D;
+	display: block;
+	float: left;
+	padding: 1rem;
+	position: relative;
+	text-decoration: none;
+	/* transition-duration: 0.5s; */
+}
+			  
+.li-in-menu a, .dropdown-li a  {
+	color: #fff;
+}
+
+.li-in-menu:hover , .dropdown-li:hover{
+	background: green;
+	cursor: pointer;
+}
+
+.ul-in-menu .li-in-menu .dropdown-ul {
+	background: orange;
+	visibility: hidden;
+	opacity: 0;
+	min-width: 5rem;
+	position: absolute;
+	transition: all 0.5s ease;
+	margin-top: 1rem;
+	left: 0;
+	display: none;
+}
+
+.ul-in-menu .li-in-menu:hover > .dropdown-ul,
+.ul-in-menu .li-in-menu:focus-within > .dropdown-ul, /* this is the line we add */
+.ul-in-menu .li-in-menu .dropdown-ul:hover
+ {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+}
+.ul-in-menu .li-in-menu .dropdown-ul .dropdown-li {
+	clear: both;
+	width: 100%;
+}
+.fa{
+	font-size:small;
+}
+.fa-caret-down:before {
+	color:yellow;
+}
+.arrow{
+	border: solid #ED7A1D;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	margin-left:3px;  
+}
+/* .ul-in-menu:hover>.li-in-menu> a>.arrow { */
+.li-in-menu:hover> a>.arrow {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+}
+.down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg); 
+}
+
+/* ................................... */
+
+/* ................ start wallpaper........ */  
+ 
+.wallpaper{
+	/* background-color:#ED7A1D; */
+	background-image:linear-gradient(to right, #00003D, blue);   
+	padding:10px 100px;  
+	display:flex;
+	clear:both;
+	border-top: 3px solid #ED7A1D;
+}
+
+
+.wallpaper-left{
+	color:white;
+	width:40%;
+}
+.wallpaper-right{
+	color:white;
+    margin:85px;
+	width:50%; 
+} 
+.figure-caption{
+	width:70%;
+} 
+.img-wallpaper{
+	/* max-width:490px; */
+	/* max-height:321px; */
+	/* text-align:center; */
+} 
+.heading{
+	font-size:46px;
+	font-family:Lato-Black;
+	text-align:left;
+	font-weight: bold;
+	margin-top:0px;
+} 
+.heading1{
+	font-size:63px;
+	font-family:Lato-Black;
+	text-align:left;
+	font-weight: bold;
+} 
+.Para1{
+	font-family:Lato-Regular;
+	font-size:16px;
+	text-align:left;
+	width:90%;
+} 
+.Para2{
+	font-family:Lato-Regular;
+	font-size:18px;
+	text-align:left;
+	width:100%;
+} 
+/* ................end wallpaper........ */
+.button1{
+	padding:10px 30px;
+	background-color:transparent;
+	font-family:Lato-Semibold;
+	text-align:center;
+	font-size:14;
+	color:#00003D;
+	border-radius:25px;
+	text-decoration:none;
+	border-color:#00003D;
+	font-weight: bold;
+} 
+.button1:hover{
+	background-color:#00003D;
+	color:white;
+} 
+.button2{
+	padding:10px 30px;
+	background-color:transparent;
+	font-family:Lato-Semibold;
+	text-align:center;
+	font-size:14;
+	color:white;
+	border-radius:25px;
+	text-decoration:none;
+	border-color:#ED7A1D;
+	font-weight: bold;
+}
+.button2:hover{
+	background-color:#ED7A1D;
+}
+.button3{
+	padding:10px 30px;
+	background-color:transparent;
+	font-family:Lato-Semibold;
+	text-align:center;
+	font-size:14;
+	color:#00003D;
+	border-radius:25px;
+	text-decoration:none;
+	border-color:#ED7A1D;
+	font-weight: bold;
+} 
+.button3:hover{
+	background-color:#ED7A1D;
+}
+/* ................start gallary........ */
+.row-gallary{
+	/* margin:1% 8%;   */
+	margin:20px 40px ; 
+	color:#00003D;
+	max-width:100%;
+}
+.row-padding{
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center ; 
+	width:91%; 
+}
+.third{
+	 max-width:100%; 
+}
+.row-padding {
+}
+.margin-top{
+}
+.third{
+	padding:8px;
+}
+.third{
+	/* width:33.33333%; */
+}
+.third{
+	   float:left;    */
+	  /* width:100%;   */
+}
+.imgcontainer{
+	text-align:left;
+}
+.border{
+	margin:20px 40px ; 
+	padding:40px 0px; 
+	border-bottom: 3px solid #00003D;
+	width:60%;
+	/* text-align:center; */
+	/* clear:both; */
+}
+.border-left{	
+	font-size:26px;
+	float:left;
+	/* clear:both; */
+}
+.border-right{	
+	float:right;
+	/* clear:both; */
+}
+/* ................end gallary........ */
+
+/* ................start grid-container........ */
+.grid-container{
+	display: block; 
+	/* display:grid;  
+	grid-template-columns:auto auto auto; */
+	padding:3% 12%;
+	background-image:linear-gradient(#00003D,blue);
+	color:white;
+	
+}
+.border-l{ 
+	/* border-left: 3px solid #ED7A1D;  */
+	/* background-image:linear-gradient(#00003D,#ED7A1D); */
+} 
+.item3, .item1, .item2{ 
+	display:inline-block;
+} 
+.item1{
+	font-size: 30px;
+	width:30%;
+	padding-left:18px;
+	margin-right: 100px;
+	margin-top:20px;
+}
+.item2{
+	width:35%; 
+	margin-left:100px;
+	/* margin-top:30px; */
+	text-align:left;
+}
+.item3{
+	height: 180px;
+	background-image:linear-gradient(#ED7A1D,green);
+	/* width:1%; */
+	width:5px;
+	text-align:left;
+}
+/* ................end grid-container........ */  
+
+/* ................start grid-container1   ........ */
+.grid-container1{
+	display:flex;
+	flex-wrap:wrap;
+	/* flex-direction: row ; */
+	align-content:center;
+	padding:5% 15%;
+	background-color:#EEE7E7;
+}
+.grid-container1-1{
+	width:45%;
+}
+.grid-container1-2{
+	width:34%;
+}
+/* ................end grid-container1   ........ */  
+
+/* ................start backgroundimage   ........ */ 
+.section-backgroundimage{
+}
+.backgroundimage{
+	padding:120px 60% 120px 15%;
+	background-image:url("img/ladies-lg.png");
+	/* background-size: cover; */
+	background-size: 100% 100%;
+	/* background-size: auto; */
+	color:#00003D;
+	background-position: center;
+    background-repeat: no-repeat;
+}
+.heading-width{
+	width:70%;
+}
+/* ................end backgroundimage   ........ */  
+
+
+/* ................start section-Elite   ........ */  
+.section-Elite{
+	padding:3% 15%;
+}
+/* ................end section-Elite   ........ */  
+
+/* ...............   1st    start form   ........ */ 
+.form-section{
+	background-color:#EEE7E7;
+	color:#00003D;
+}
+.form2-fieldset{
+	border:none;	 
+     /* width:50%;  */
+}
+.form2{
+	 padding:3% 25%;  
+}
+.form-heading{
+	font-family: Lato-Regular;
+    font-size: 40px;
+    text-align: left;
+	color:#00003D;
+	font-weight:bold;
+}
+input[type=text]{
+	margin:15px 0px;
+	border:none;
+	border-bottom: 3px solid #ED7A1D;
+	background-color:#EEE7E7;
+	box-sizing: border-box;
+	outline: none;
+}
+.form1-input{
+	width:100%;
+	padding-bottom:10px;
+}
+.form1-input::placeholder {
+  color: #00003D;
+  font-size:16px;
+  text-align:left;
+}
+.form-text{
+	display:block;
+}
+.form-text1_1{
+	display:inline-block;
+	width:45%;
+}
+.form-text1_2{
+	display:inline-block;
+	width:45%;
+	margin-left: 70px;
+}
+.divide {
+    width: 100%;
+}
+.checkbox-form{
+	display:flex;
+}
+.checkbox-design{
+	margin-top: 16px;
+    margin-right: 8px;
+}
+input[type=checkbox]{
+	height:30px;
+	width:30px;
+}
+/* ................  1st    end form   ........ */ 
+ 
+/* ................    start footer   ........ */  
+.footer{
+	background-color:#00003D; 
+	display:flex;
+	color:white; 
+	padding :25px 45px; 	
+}
+.footer-menu{
+	margin:15px;		
+	flex:1; 
+}
+.f-heading{
+	font-family:Lato-Black;
+	font-size:16;
+	text-align:left;
+}
+.f-para{
+	font-family:Lato-Black;
+	font-size:14;
+	text-align:left;
+	color:#ED7A1D;
+}
+.imgfram{
+	padding-top:20px;	
+}
+.footer-icon{
+	/* display:block; */
+}
+.fa{
+	padding: 5px; 
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius:50%;
+	border:2px solid white;
+}
+.fa fa-twitter, 
+.fa fa-youtube-play ,
+.fa fa-instagram{
+	/* display:inline-block; */
+}
+
+/* ................end footer   ........ */  
+
+@media screen and (max-width:400px){
+	.wallpaper-left{
+	width:90%;
+	}
+	.wallpaper-right{
+	width:90%; 
+	} 
+}	
+
+@media sceen and (max-width:400px){
+	.grid-container1-1{
+	width:90%;
+   }
+  .grid-container1-2{
+	width:90%;
+   }
+}
+@media sceen and (max-width:400px){
+	.form-text{
+}
+.form-text1_1{
+	width:90%;
+}
+.form-text1_2{
+	width:90%;
+}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
